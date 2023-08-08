@@ -26,7 +26,7 @@
 
 # Streamlit dependencies
 import streamlit as st
-import joblib,os
+import joblib, os
 from PIL import Image
 import re
 import string
@@ -310,7 +310,7 @@ def main():
 		tweet_text_token = ' '.join(tweet_text_token)
 
 
-		model_option = ["Logistic Regression", "Linear Support Vector Classifier", "Random Forest Classifier", "Naive Bayes",
+		model_option = ["Logistic Regression", "Linear Support Vector Classifier", "Naive Bayes",
 							"K Nearest Neighbour Classifier", "Linear SVC using Optimal Hyperparameters"]	# A list of available models that can be used for the classification
 
 		model_selection = st.selectbox("Select a model type you will like to use as the classifier.", model_option)
@@ -324,9 +324,9 @@ def main():
 		if model_selection == "Linear Support Vector Classifier":
 			predictor = joblib.load(open(os.path.join("../resources/linear_svc_model.pkl"),"rb"))
 
-			# If Random Forest Classifier is selected
-		if model_selection == "Random Forest Classifier":
-			predictor = joblib.load(open(os.path.join("../resources/random_forest_model.pkl"),"rb"))
+		# If Random Forest Classifier is selected
+		#if model_selection == "Random Forest Classifier":
+		#	predictor = joblib.load(open(os.path.join("../resources/random_forest_model.pkl"),"rb"))
 
 			# If Naive Bayes is selected
 		if model_selection == "Naive Bayes":
