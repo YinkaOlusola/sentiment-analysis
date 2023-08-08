@@ -9,7 +9,7 @@ As part of the predict, students are expected to expand on this base template; i
 
 #### Streamlit
 
-Streamlit is a framework based off Python Programming language that is used to build interactive web applications for Data Science and Machine Learning projects.
+Streamlit is a framework based on Python Programming language that is used to build interactive web applications for Data Science and Machine Learning projects.
 
 In its own words:
 > Streamlit ... is the easiest way for data scientists and machine learning engineers to create beautiful, performant apps in only a few hours!  All in pure Python. All for free.
