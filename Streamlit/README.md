@@ -19,7 +19,7 @@ In its own words:
 Streamlit takes away much of the background work needed in order to get a platform that can deploy models to clients and end users.
 Meaning that one gets to focus on the important stuff (related to the data), and can largely ignore the rest. This will allow one to become a lot more productive.  
 
-![Streamlit base page](resources/imgs/streamlit-base-splash-screen.png)
+![Streamlit base page](../resources/imgs/streamlit-base-splash-screen.png)
 
 
 ## Running Streamlit on a remote AWS EC2 instance
