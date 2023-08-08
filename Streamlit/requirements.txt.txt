@@ -1,0 +1,8 @@
+joblib
+PIL
+re
+string
+html
+nltk
+numpy
+pandas
