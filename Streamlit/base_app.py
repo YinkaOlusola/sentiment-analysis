@@ -178,7 +178,7 @@ def main():
 		# Length of Tweet per class
 		if eda_selection == "Length of tweet per class":
 			st.subheader("Tweet per Class")
-			length_of_tweet_per_class_image = Image.open('resources/plot_images/length_of_tweet_per_c.png')
+			length_of_tweet_per_class_image = Image.open('resources/plot_images/length_of_tweet_per_class.png')
 			st.image(image=length_of_tweet_per_class_image, caption="Box plot for Length of tweet per class")
 
 			text = "From the boxplot, it could be observed that tweets that fall in the pro climate change class are\
