@@ -28,7 +28,7 @@ from nltk.corpus import stopwords, wordnet
 
 # Data dependencies
 import pandas as pd
-from IPython.display import Markdown
+#from IPython.display import Markdown
 
 
 # Load your raw data
