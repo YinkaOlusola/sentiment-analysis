@@ -60,7 +60,7 @@ def main():
 		# Company name and Logo
 		col_1, mid, col_2 = st.columns([1, 5, 20])
 		with col_1:
-			st.image(image=business_logo_image, caption="Business Logo", width=120)
+			st.image(image=business_logo_image, width=120) # , caption="Business Logo"
 
 		with col_2:
 			st.header("*EMERALD*")
