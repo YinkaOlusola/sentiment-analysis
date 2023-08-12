@@ -129,7 +129,7 @@ def main():
 		st.info("General Information")
 		
 		# load the markdown containing information about the project.
-		with open('resources/info', 'r') as f:
+		with open('resources/info.md', 'r') as f:
 			text = f.read()
 
 		# You can read a markdown file from supporting resources folder
