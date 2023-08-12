@@ -33,7 +33,7 @@ import pandas as pd
 
 
 # Load your raw data
-raw = pd.read_csv("Dataset/train")
+raw = pd.read_csv("Dataset/train.csv")
 
 # The main function where we will build the actual app
 def main():
