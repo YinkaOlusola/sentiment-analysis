@@ -32,7 +32,7 @@ from nltk.corpus import stopwords, wordnet
 
 
 # Load your raw data
-raw = pd.read_csv("../resources/train.csv")
+raw = pd.read_csv("../Dataset/train")
 
 # The main function where we will build the actual app
 def main():
