@@ -54,14 +54,14 @@ def main():
 	# Landing Page
 	if selection == "Home Page":
 		# Adds the start up business logo
-		business_logo_image = Image.open('resources/imgs/Business_.jpg')
-		team_image = Image.open('resources/imgs/.png')
-		about_us_image = Image.open('resources/imgs/abou.png')
+		business_logo_image = Image.open('resources/imgs/Business_Logo.jpg')
+		team_image = Image.open('resources/imgs/team.png')
+		about_us_image = Image.open('resources/imgs/about_us.png')
 		
 		# Company name and Logo
 		col_1, mid, col_2 = st.columns([1, 5, 20])
 		with col_1:
-			st.image(image=business_logo_image, caption="Business Logo", width=120)
+			st.image(image=business_logo_image, width=120) #caption="Business Logo",
  
 		with col_2:
 			st.header("*EMERALD*")
@@ -103,7 +103,7 @@ def main():
 	if selection == "This APP":
 
 		# App logo
-		ml_logo_image = Image.open('resources/imgs/ml_.png') # this opens the logo image
+		ml_logo_image = Image.open('resources/imgs/ml_logo.png') # this opens the logo image
 
 		col_1, mid, col_2 = st.columns([1, 10, 20])
 		with col_1:
@@ -129,7 +129,7 @@ def main():
 		st.info("General Information")
 		
 		# load the markdown containing information about the project.
-		with open('resources/inf', 'r') as f:
+		with open('resources/info', 'r') as f:
 			text = f.read()
 
 		# You can read a markdown file from supporting resources folder
@@ -169,7 +169,7 @@ def main():
 			st.subheader("Tweet Distribution")
 			text1 = "The image below shows a plot depicting how the tweets are distributed across each class."
 			st.markdown(text1)
-			tweet_dist_image = Image.open('resources/plot_images/tweet_d.png')
+			tweet_dist_image = Image.open('resources/plot_images/tweet_distn.png')
 			st.image(image=tweet_dist_image, caption="Tweet distribution")
 			text2 = "A close look at the above distribution indicates that the data is severely imbalanced with the majority \
 			of tweets falling in the 'pro' category, supporting the belief of man-made climate change while just 6% are anti-climate change."
@@ -201,28 +201,28 @@ def main():
 			# Graph 1 for hashtags
 			image_text_1 = "Top Hashtags for Pro Climate Change"
 			st.markdown(image_text_1)
-			pro_image = Image.open('resources/plot_images/top_hashtags_pro_climate_ch.png')
+			pro_image = Image.open('resources/plot_images/top_hashtags_pro_climate_change.png')
 			st.image(image=pro_image, caption="Top Hashtags for Pro Climate Change")
 
 			st.text("\n\n\n\n\n")
 			# Graph 2 for hashtags
 			image_text_2 = "Top Hashtags for Anti Climate Change"
 			st.markdown(image_text_2)
-			anti_image = Image.open('resources/plot_images/top_hashtags_anti_climate_ch.png')
+			anti_image = Image.open('resources/plot_images/top_hashtags_anti_climate_change.png')
 			st.image(image=anti_image, caption="Top Hashtags for Anti Climate Change")
 
 			st.text("\n\n\n\n\n")
 			# Graph 3 for hashtags
 			image_text_3 = "Top Hashtags for News on Climate Change"
 			st.markdown(image_text_3)			
-			news_image = Image.open('resources/plot_images/top_hashtags_news_c.png')
+			news_image = Image.open('resources/plot_images/top_hashtags_news_class.png')
 			st.image(image=news_image, caption="Top Hashtags for News on Climate Change")
 
 			st.text("\n\n\n\n\n")
 			# Graph 4 for hashtags
 			image_text_4 = "Top Hashtags for Neutral tweets on Climate Change"
 			st.markdown(image_text_4)			
-			neutral_image = Image.open('resources/plot_images/top_hashtags_neutral_c.png')
+			neutral_image = Image.open('resources/plot_images/top_hashtags_neutral_class.png')
 			st.image(image=neutral_image, caption="Top Hashtags for Neutral tweets on Climate Change")									
 
 			text2 = "Knowing the popular words used across various classes can help to understand how customers think or are thinking."
@@ -316,8 +316,8 @@ def main():
 			predictor = joblib.load(open(os.path.join("resources/naive_bayes_model"),"rb"))
 
 			# If K Nearest Neighbour Classifier is selected
-		if model_selection == "K Nearest Neighbour Classifier":
-			predictor = joblib.load(open(os.path.join("resources/knn_model"),"rb"))
+		#if model_selection == "K Nearest Neighbour Classifier":
+		#	predictor = joblib.load(open(os.path.join("resources/knn_model"),"rb"))
 
 			# If Linear SVC using Optimal Hyperparameters is selected
 		if model_selection == "Linear SVC using Optimal Hyperparameters":
