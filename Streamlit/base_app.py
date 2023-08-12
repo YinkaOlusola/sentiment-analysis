@@ -14,6 +14,7 @@ import re
 import string
 import html
 import nltk
+import pandas as pd
 
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -27,7 +28,6 @@ from nltk.corpus import stopwords, wordnet
 
 
 # Data dependencies
-import pandas as pd
 #from IPython.display import Markdown
 
 
