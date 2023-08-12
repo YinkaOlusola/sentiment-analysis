@@ -14,7 +14,7 @@ import re
 import string
 import html
 import nltk
-import scikit-learn as sklearn
+import sklearn
 
 nltk.download('punkt')
 nltk.download('wordnet')
