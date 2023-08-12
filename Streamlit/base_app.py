@@ -301,11 +301,11 @@ def main():
 			# Selecting from multiple models
 			# If Logistic Regression is selected
 		if model_selection == "Logistic Regression":
-			predictor = joblib.load(open(os.path.join("resources/logistic_regression_model"),"rb"))
+			predictor = joblib.load(open(os.path.join("resources/logistic_regression_model.pkl"),"rb"))
 
 			# If Linear Support Vector Classifier is selected
 		if model_selection == "Linear Support Vector Classifier":
-			predictor = joblib.load(open(os.path.join("resources/linear_svc_model"),"rb"))
+			predictor = joblib.load(open(os.path.join("resources/linear_svc_model.pkl"),"rb"))
 
 		# If Random Forest Classifier is selected
 		#if model_selection == "Random Forest Classifier":
@@ -313,15 +313,15 @@ def main():
 
 			# If Naive Bayes is selected
 		if model_selection == "Naive Bayes":
-			predictor = joblib.load(open(os.path.join("resources/naive_bayes_model"),"rb"))
+			predictor = joblib.load(open(os.path.join("resources/naive_bayes_model.pkl"),"rb"))
 
 			# If K Nearest Neighbour Classifier is selected
 		#if model_selection == "K Nearest Neighbour Classifier":
-		#	predictor = joblib.load(open(os.path.join("resources/knn_model"),"rb"))
+		#	predictor = joblib.load(open(os.path.join("resources/knn_model.pkl"),"rb"))
 
 			# If Linear SVC using Optimal Hyperparameters is selected
 		if model_selection == "Linear SVC using Optimal Hyperparameters":
-			predictor = joblib.load(open(os.path.join("resources/lsvc_op_model"),"rb"))
+			predictor = joblib.load(open(os.path.join("resources/lsvc_op_model.pkl"),"rb"))
 
 		if st.button("Classify"):
 			# Transforming user input with vectorizer
