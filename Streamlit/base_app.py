@@ -53,9 +53,9 @@ def main():
 	# Landing Page
 	if selection == "Home Page":
 		# Adds the start up business logo
-		business_logo_image = Image.open('../resources/imgs/Business_Logo.jpg')
-		team_image = Image.open('../resources/imgs/team.png')
-		about_us_image = Image.open('../resources/imgs/about_us.png')
+		business_logo_image = Image.open('resources/imgs/Business_Logo.jpg')
+		team_image = Image.open('resources/imgs/team.png')
+		about_us_image = Image.open('resources/imgs/about_us.png')
 		
 		# Company name and Logo
 		col_1, mid, col_2 = st.columns([1, 5, 20])
@@ -102,7 +102,7 @@ def main():
 	if selection == "This APP":
 
 		# App logo
-		ml_logo_image = Image.open('../resources/imgs/ml_logo.png') # this opens the logo image
+		ml_logo_image = Image.open('resources/imgs/ml_logo.png') # this opens the logo image
 
 		col_1, mid, col_2 = st.columns([1, 10, 20])
 		with col_1:
@@ -128,7 +128,7 @@ def main():
 		st.info("General Information")
 		
 		# load the markdown containing information about the project.
-		with open('../resources/info.md', 'r') as f:
+		with open('resources/info.md', 'r') as f:
 			text = f.read()
 
 		# You can read a markdown file from supporting resources folder
@@ -168,7 +168,7 @@ def main():
 			st.subheader("Tweet Distribution")
 			text1 = "The image below shows a plot depicting how the tweets are distributed across each class."
 			st.markdown(text1)
-			tweet_dist_image = Image.open('../resources/plot_images/tweet_distn.png')
+			tweet_dist_image = Image.open('resources/plot_images/tweet_distn.png')
 			st.image(image=tweet_dist_image, caption="Tweet distribution")
 			text2 = "A close look at the above distribution indicates that the data is severely imbalanced with the majority \
 			of tweets falling in the 'pro' category, supporting the belief of man-made climate change while just 6% are anti-climate change."
@@ -177,7 +177,7 @@ def main():
 		# Length of Tweet per class
 		if eda_selection == "Length of tweet per class":
 			st.subheader("Tweet per Class")
-			length_of_tweet_per_class_image = Image.open('../resources/plot_images/length_of_tweet_per_class.png')
+			length_of_tweet_per_class_image = Image.open('resources/plot_images/length_of_tweet_per_class.png')
 			st.image(image=length_of_tweet_per_class_image, caption="Box plot for Length of tweet per class")
 
 			text = "From the boxplot, it could be observed that tweets that fall in the pro climate change class are\
@@ -200,21 +200,21 @@ def main():
 			# Graph 1 for hashtags
 			image_text_1 = "Top Hashtags for Pro Climate Change"
 			st.markdown(image_text_1)
-			pro_image = Image.open('../resources/plot_images/top_hashtags_pro_climate_change.png')
+			pro_image = Image.open('resources/plot_images/top_hashtags_pro_climate_change.png')
 			st.image(image=pro_image, caption="Top Hashtags for Pro Climate Change")
 
 			st.text("\n\n\n\n\n")
 			# Graph 2 for hashtags
 			image_text_2 = "Top Hashtags for Anti Climate Change"
 			st.markdown(image_text_2)
-			anti_image = Image.open('../resources/plot_images/top_hashtags_anti_climate_change.png')
+			anti_image = Image.open('resources/plot_images/top_hashtags_anti_climate_change.png')
 			st.image(image=anti_image, caption="Top Hashtags for Anti Climate Change")
 
 			st.text("\n\n\n\n\n")
 			# Graph 3 for hashtags
 			image_text_3 = "Top Hashtags for News on Climate Change"
 			st.markdown(image_text_3)			
-			news_image = Image.open('../resources/plot_images/top_hashtags_news_class.png')
+			news_image = Image.open('resources/plot_images/top_hashtags_news_class.png')
 			st.image(image=news_image, caption="Top Hashtags for News on Climate Change")
 
 			st.text("\n\n\n\n\n")
