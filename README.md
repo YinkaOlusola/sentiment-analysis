@@ -20,10 +20,31 @@ informing future marketing strategies.
 
 - Data Cleaning and Exploratory Data Analysis (EDA): The Data was cleaned and important visualizations about the available data were carried out.
 
+Based on the data set used in the project, below is the tweet distribution with class Pro having a very high frequency.
 
+<img src="resources/plot_images/tweet_distn.png" alt="Image Description" width ="800" height="400">
 
+<br>
+
+Because of the imbalance in the dataset, a resampling was done on the dataset during the data engineering phase of the project.
 
 - Data Engineering: The text data set was put in a format that can be used in a machine learning algorithm.
+
+
+## Model Evaluation
+
+The evaluation metric for the Kaggle competition was Weighted F1-score Prediction of an individual's climate change sentiment class is commonly used in classifications problems.
+
+After comparison of the different models, the support vector classifier (SVC) was selected as it gave the best performance among the tested models using the F1-score as shown below.
+
+
+<img src="resources/plot_images/models_performance_comparison.JPG" alt="Image Description" width ="800" height="400">
+
+
+## Kaggle Submission
+
+The random forest model was used to make a submission on Kaggle for the [Spain Electricity Shortfall challenge](https://www.kaggle.com/competitions/spain-electricity-shortfall-challenge-2022/leaderboard) where my team was able to attain an 8th position on the leaderboard after a lot of fine-tuning of the model.
+
 
 - Machine Learning Model training: Different machine learning models were considered; Logistic Regression,
   Support Vector Classifier, Random forest classifier, Naive Bayes classifier, and K Nearest Neighbour classification.
