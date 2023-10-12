@@ -5,9 +5,9 @@
 
 ![Streamlit](../resources/imgs/streamlit.png)
 
-As part of the predict, students are expected to expand on this base template; increasing the number of available models, user data exploration capabilities, and general Streamlit functionality.    
+As part of the predict, we were expected to expand on this base template; increasing the number of available models, user data exploration capabilities, and general Streamlit functionality.    
 
-#### Streamlit
+### Streamlit
 
 Streamlit is a framework based on Python Programming language that is used to build interactive web applications for Data Science and Machine Learning projects.
 
