@@ -22,14 +22,19 @@ informing future marketing strategies.
 
 Based on the data set used in the project, below is the tweet distribution with class Pro having a very high frequency.
 
-<img src="resources/plot_images/tweet_distn.png" alt="Image Description" width ="800" height="400">
+<br>
+
+**Tweet Distribution**
+<img src="resources/plot_images/tweet_distn.png" alt="Tweet distribution" width ="800" height="400">
 
 <br>
 
 A close look at the above distribution indicates that the data is severely imbalanced with the majority	of tweets falling in the 'pro' category, supporting the belief of man-made climate change while just 6% are anti-climate change
 
+<br>
 
-<img src="resources/plot_images/length_of_tweet_per_class.png" alt="Image Description" width ="800" height="400">
+**Tweet per class**
+<img src="resources/plot_images/length_of_tweet_per_class.png" alt="Length of Tweets per class" width ="800" height="400">
 
 
 From the boxplot, it could be observed that tweets that fall in the pro climate change class are generally longer and the shortest tweets belong to the anti climate change class.
@@ -38,6 +43,36 @@ This can be seen from the respective spans of the plots. It seems that we have s
 
 It is worthy to also not that neutral climate change tweets tend to have the most variability in tweet length
 
+
+#### Top Hashtags
+
+Hashtags being a powerful feature used in sorting and organizing tweets provide an excellent approach to show that a content is related to a specific issue.
+
+It could be helpful in unraveling what the most popular hashtags are in each of the classes which would help in obtaining a better grasp of the types of knowledge ingested and shared by members of each class.
+
+<br>
+
+**Top Hashtags for Pro Climate Change**
+<img src="resources/plot_images/top_hashtags_pro_climate_change.png" alt="Top Hashtags for Pro Climate Change" width ="800" height="400">
+
+<br>
+
+**Top Hashtags for Anti Climate Change**
+<img src="resources/plot_images/top_hashtags_anti_climate_change.png" alt="Top Hashtags for Anti Climate Change" width ="800" height="400">
+
+<br>
+
+**Top Hashtags for News on Climate Change**
+<img src="resources/plot_images/top_hashtags_news_class.png" alt="Top Hashtags for News on Climate Change" width ="800" height="400">
+
+<br>
+
+**Top Hashtags for Neutral Tweets on Climate Change**
+<img src="resources/plot_images/top_hashtags_neutral_class.png" alt="Top Hashtags for Neutral tweets on Climate Change" width ="800" height="400">
+
+
+
+Knowing the popular words used across various classes can help to understand how customers think or are thinking.
 
 ## Model Evaluation
 
