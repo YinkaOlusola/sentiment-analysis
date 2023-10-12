@@ -26,9 +26,17 @@ Based on the data set used in the project, below is the tweet distribution with 
 
 <br>
 
-Because of the imbalance in the dataset, a resampling was done on the dataset during the data engineering phase of the project.
+A close look at the above distribution indicates that the data is severely imbalanced with the majority	of tweets falling in the 'pro' category, supporting the belief of man-made climate change while just 6% are anti-climate change
 
-- Data Engineering: The text data set was put in a format that can be used in a machine learning algorithm.
+
+<img src="resources/plot_images/length_of_tweet_per_class.png" alt="Image Description" width ="800" height="400">
+
+
+From the boxplot, it could be observed that tweets that fall in the pro climate change class are generally longer and the shortest tweets belong to the anti climate change class.
+
+This can be seen from the respective spans of the plots. It seems that we have strong-witted pros here!!
+
+It is worthy to also not that neutral climate change tweets tend to have the most variability in tweet length
 
 
 ## Model Evaluation
