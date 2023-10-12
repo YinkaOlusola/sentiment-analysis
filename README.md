@@ -109,7 +109,7 @@ After comparison of the different models, the support vector classifier (SVC) wa
 
 
 **Model Performance comparison**
-<img src="resources/plot_images/models_performance_comparison.JPG" alt="Image Description" width ="500" height="250">
+<img src="resources/plot_images/models_performance_comparison.JPG" alt="Image Description" width ="600" height="300">
 
 <br>
 
