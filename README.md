@@ -16,14 +16,12 @@ Providing an accurate and robust solution to this task gives companies access to
 sentiment, spanning multiple demographic and geographic categories - thus increasing their insights and 
 informing future marketing strategies.
 
-## The Notebook
-The project was done in a Jupyter Notebook. The Notebook contains
+## Exploratory Data Analysis
 
-- Introduction
+- Data Cleaning and Exploratory Data Analysis (EDA): The Data was cleaned and important visualizations about the available data were carried out.
 
-- Importing Packages and Loading Data
 
-- Data Cleaning and Exploratory Data Analysis (EDA): The Data was cleaned and important visualizations about the available data were carried out
+
 
 - Data Engineering: The text data set was put in a format that can be used in a machine learning algorithm.
 
