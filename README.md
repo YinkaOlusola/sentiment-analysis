@@ -115,7 +115,7 @@ After comparison of the different models, the support vector classifier (SVC) wa
 
 ## Kaggle Submission
 
-The random forest model was used to make a submission on Kaggle for the [Spain Electricity Shortfall challenge](https://www.kaggle.com/competitions/spain-electricity-shortfall-challenge-2022/leaderboard) where my team was able to attain an 8th position on the leaderboard after a lot of fine-tuning of the model.
+The random forest model was used to make a submission on Kaggle for the [Climate Change Belief Analysis Challenge](https://www.kaggle.com/competitions/edsa-climate-change-belief-analysis-2022/leaderboard) where my team was able to attain an 8th position on the leaderboard after a lot of fine-tuning of the model.
 
 
 - Machine Learning Model training: Different machine learning models were considered; Logistic Regression,
